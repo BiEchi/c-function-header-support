@@ -1,0 +1,31 @@
+{
+    "name": "c-function-header-support",
+    "displayName": "C Function Header Snippet for UIUC ECE391",
+    "description": "This extension is used to generate a bunch of block comment for C function headers.",
+    "version": "1.1.0",
+    "license": "GPL",
+    "engines": {
+        "vscode": "^1.38.0"
+    },
+    "icon": "graphs/icon.png",
+	"publisher": "JackBAI",
+    "categories": [
+        "Snippets"
+    ],
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/BiEchi/c-function-header-support"
+	},
+    "bugs": {
+		"url": "https://github.com/BiEchi/c-function-header-support/issues",
+		"email": "haob2@illinois.edu"
+	},
+    "contributes": {
+        "snippets": [
+			{
+				"language": "c",
+				"path": "./snippets/c.json"
+			}
+		]
+    }
+}
