@@ -1,0 +1,8 @@
+{
+    "Create a Header": {
+        "prefix":[
+            "header"
+        ],
+        "body": "/* ${1:functionName}()\n *  Functionality: ${2:description...}\n *  Arguments: ${3:arguments...}\n *  Return: ${4:possibleReturnValues}\n *  References: ${5:document/website...}\n ***********************************************************************************\n *  ${6:IMPORTANT NOTICE FOR READER}\n */"
+    }
+}
