@@ -6,8 +6,16 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 
 
+## [1.2.0] - 2022.4.15
+
+### Added
+
+-   Complete support for comments.
+
+
+
 ## [1.0.0] - 2022.3.21
 
 ### Added
 
--   Completed the 
+-   Completed the `header` command.

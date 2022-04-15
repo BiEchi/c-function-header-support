@@ -1,8 +1,56 @@
 {
-    "Create a Header": {
+    "function block comments(.c): unified function header": {
         "prefix":[
-            "header"
+            "function_comments"
         ],
         "body": "/* ${1:functionName}()\n *  Functionality: ${2:description...}\n *  Arguments: ${3:arguments...}\n *  Return: ${4:possibleReturnValues}\n *  References: ${5:document/website...}\n ***********************************************************************************\n *  ${6:IMPORTANT NOTICE FOR READER}\n */"
+    },
+    "ifndef (.h): all needed ifndef initialization commands for ifndef in an H file": {
+        "prefix":[
+            "#ifndef"
+        ],
+        "body": "#ifndef ${1:headerName}\n#define ${1:headerName}\n\n${2:code...}\n\n#endif /* ${1:headerName} */"
+    },
+    "macro constants (.h): block comment for macro constants": {
+        "prefix":[
+            "macro_constants"
+        ],
+        "body": "/**********************************************************************/\n/*                                                                    */\n/*                           MACRO CONSTANTS                          */\n/*                                                                    */\n/**********************************************************************/\n\n"
+    },
+    "macro functions (.h): block comment for macro functions": {
+        "prefix":[
+            "macro_functions"
+        ],
+        "body": "/**********************************************************************/\n/*                                                                    */\n/*                           MACRO FUNCTIONS                          */\n/*                                                                    */\n/**********************************************************************/\n\n"
+    },
+    "global variables (.h): block comment for global variables": {
+        "prefix":[
+            "global_variables"
+        ],
+        "body": "/**********************************************************************/\n/*                                                                    */\n/*                           GLOBAL VARIABLES                         */\n/*                                                                    */\n/**********************************************************************/\n\n"
+    },
+    "function signatures (.h): block comment for function signatures": {
+        "prefix":[
+            "function_signatures"
+        ],
+        "body": "/**********************************************************************/\n/*                                                                    */\n/*                           FUNCTION SIGNATURES                      */\n/*                                                                    */\n/**********************************************************************/\n\n"
+    },
+    "helper functions (.c): block comment for helper functions": {
+        "prefix":[
+            "helper_functions"
+        ],
+        "body": "/**********************************************************************/\n/*                                                                    */\n/*                           HELPER FUNCTIONS                         */\n/*                                                                    */\n/**********************************************************************/\n\n"
+    },
+    "utility functions (.c): block comment for utility functions": {
+        "prefix":[
+            "utility_functions"
+        ],
+        "body": "/**********************************************************************/\n/*                                                                    */\n/*                           UTILITY FUNCTIONS                        */\n/*                                                                    */\n/**********************************************************************/\n\n"
+    },
+    "self-defined block comments": {
+        "prefix":[
+            "block_comments"
+        ],
+        "body": "/**********************************************************************/\n/*                                                                    */\n/*                           ${1:BLOCK USAGE}                         */\n/*                                                                    */\n/**********************************************************************/\n\n"
     }
 }
